@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>密码框可见操作</title>
+  <style>
+  	body {
+  font-family: 微软雅黑;
+  font-size: 1em;
+  line-height: 2em;
+  margin: 0;
+}
+
+form {
+  width: 360px;
+  margin: 20px auto 0;
+  padding: 20px 20px;
+}
+
+input, label {
+  font-size: 1.2em;
+}
+
+#pwNormal {
+  width: 220px;
+  margin: 0;
+}
+
+.pwDisplay {
+  width: 216px;
+  height: 20px;
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  border: #fff;
+}
+
+.inputs {
+  position: relative;
+  display: inline-block;
+}
+
+img {
+  display: inline-block;
+  height: 28px;
+  position: relative;
+  top: 8px;
+  left: -42px;
+  z-index: 9;
+}
+
+  </style>
+</head>
+<body>
+ <form action="#">
+   <label>密码：</label>
+   <div class="inputs">
+   <input id="pwNormal" type="password">
+   <img id="btnTest" src="img/eye-close.png" alt="显示密码">
+   <input class="pwDisplay">
+ </div>
+ </form>
+</body>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/password.js"></script>
+</html>
